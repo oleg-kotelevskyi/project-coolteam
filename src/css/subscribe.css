@@ -1,0 +1,64 @@
+.input-subscribe {
+    border-radius: 12px;
+width: 288px;
+height: 40px;
+ background-color: #E0CBB4;
+}
+.subscribe-section {
+    background-color: #E0CBB4;
+    padding: 64px 16px;
+}
+
+.subscribe-title {
+    margin-bottom: 24px;
+}
+
+.subscribe-subtitle {
+    margin-bottom: 32px;
+}
+
+.subscribe-subtitle h3 {
+    text-transform: capitalize;
+}
+
+.blok-form {
+    margin-bottom: 32px;
+    
+}
+
+.form-subscribe {
+    margin-bottom: 16px;
+}
+
+.subscribe-img {
+    border-radius: 40px;
+width: 288px;
+height: 400px;
+}
+
+.label-subscribe {
+        
+}
+
+.submit {
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 12px;
+    background-color: #6F4E37;
+    color: #FFFFFF;
+    border-radius: 100px;
+padding: 10px 24px;
+width: 288px;
+height: 44px;
+}
+
+.input-subscribe {
+    margin-bottom: 24px;
+    padding: 8px 12px;
+}
+
+.icon-chevrons-right {
+    fill: currentColor;
+}
