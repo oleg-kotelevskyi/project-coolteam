@@ -24,7 +24,7 @@
     margin: 0 auto 24px;
 }
 
-.quality-section-descr{
+.quality-descr{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -79,12 +79,12 @@ img{
     }
 
     .quality-section, .quality-list{
-        gap: 0;
+        gap: 24px;
     }
 
-    .quality-item + .quality-item{
+    /* .quality-item + .quality-item{
         margin-top: 24px;
-    }
+    } */
 
     img{
         aspect-ratio: 288 / 164;
@@ -106,12 +106,12 @@ img{
     }
 
     .quality-section .quality-list{
-        gap: 0;
+        gap: 24px;
     }
 
-    .quality-item + .quality-item{
+    /* .quality-item + .quality-item{
         margin-top: 24px;
-    }
+    } */
 
     img{
         aspect-ratio: 288 / 164;
@@ -191,7 +191,7 @@ img{
     }
 
     .quality-list .quality-item{
-        flex: 0 0 calc(100% - 48px) / 3;
+        flex: 0 0 calc((100% - 48px) / 3);
         min-width: 0;
     }
 
