@@ -29,6 +29,11 @@
     fill: #0b0803;
 }
 
+.testimonials-icon-accent {
+    stroke: #0b0803;
+    fill: transparent;
+}
+
 .testimonials-text {
     font-weight: 400;
     font-size: 18px;
