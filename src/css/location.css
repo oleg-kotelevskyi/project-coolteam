@@ -61,6 +61,7 @@
 }
 
 .loc-link {
+    font-style: normal;
     padding-top: 8px;
     font-weight: 400;
         font-size: 16px;
@@ -80,11 +81,13 @@
 }
 
 .loc-text.loc-address {
+    font-style: normal;
     font-size: 16px;
     padding-top: 8px;
 }
 
 .loc-map-link{
+    font-style: normal;
     padding-top: 16px;
     font-weight: 500;
         font-size: 16px;
