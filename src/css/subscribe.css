@@ -1,6 +1,6 @@
 /* #region Subscribe*/
 .subscribe-section {
-   padding: 0 16px;
+  
 }
 
 .subscribe-title {
@@ -118,8 +118,7 @@ input:not(:placeholder-shown):invalid + .error-message {
 /* #region Media Tablet*/
 @media screen and (min-width: 768px) {
   .subscribe-section {
-    padding-left: 32px;
-    padding-right: 32px;
+    
   }
 
   .form-subscribe {
@@ -151,24 +150,18 @@ gap: 24px;
 /* #endregion Media Tablet*/
 
 /* #region Media Desktop*/
-@media screen and (min-width: 1158px) {
-  .subscribe-section {
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+
     display: flex;
-    padding-left: 64px;
-    padding-right: 64px;
+    gap: 32px;
   }
-
-  .wraper {
-    padding: 62px 32px 63px 0;
-  }
-
-    .form-subscribe {
+  
+      .form-subscribe {
     gap: 16px;
   }
+   
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  }
 /* #endregion Media Desktop*/
