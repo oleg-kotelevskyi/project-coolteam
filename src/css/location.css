@@ -61,6 +61,7 @@
 }
 
 .loc-link {
+    font-style: normal;
     padding-top: 8px;
     font-weight: 400;
         font-size: 16px;
@@ -80,11 +81,16 @@
 }
 
 .loc-text.loc-address {
+    font-style: normal;
     font-size: 16px;
     padding-top: 8px;
 }
 
 .loc-map-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-style: normal;
     padding-top: 16px;
     font-weight: 500;
         font-size: 16px;
@@ -101,9 +107,7 @@
     opacity: 0.7;
 }
 
-.loc-address-icon {
-    color: #0b0803;
-}
+
 
 .map-box {
     margin-top:32px;
