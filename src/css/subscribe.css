@@ -113,26 +113,29 @@ input:not(:placeholder-shown):invalid+.error-message {
 
 /* #region Media Tablet*/
 @media screen and (min-width: 768px) {
-  .subscribe-section {}
 
   .form-subscribe {
     display: flex;
     gap: 24px;
+    margin-bottom: 0;
   }
 
-  .input-subscribe {
-    width: 340px;
+  .input-subscribe,
+  .label-subscribe {
+    min-width: 340px;
+    width: 0;
     height: 44px;
     margin-bottom: 0;
   }
 
   .submit {
-    width: 158px;
+    width: 0;
+    min-width: 158px;
     margin-top: 0;
   }
 
-  .subscribe-img {
-    width: 100%;
+  .blok-form p {
+    margin-top: 16px;
   }
 
 }
@@ -155,9 +158,8 @@ input:not(:placeholder-shown):invalid+.error-message {
     font-size: 48px
   }
 
-
-  .blok-form {
-    min-width: 640px;
+  .wraper {
+    width: 640px;
   }
 
   .form-subscribe {
