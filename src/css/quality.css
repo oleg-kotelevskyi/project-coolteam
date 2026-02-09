@@ -2,6 +2,10 @@
     padding: 64px 0;
 }
 
+.quality-container{
+    text-align: center;
+}
+
 .quality-section-title{
     font-family: 'Aboreto', sans-serif;
 }
