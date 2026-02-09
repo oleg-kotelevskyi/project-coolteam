@@ -1,5 +1,11 @@
 /*EXPERIENCE*/
 
+.experience .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .title-container {
   padding-top: 64px;
   display: flex;
@@ -110,4 +116,58 @@
     width: 704px;
     height: 391px;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .experience-grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 416px);
+    gap: 32px;
+    justify-content: center;
+    align-items: start;
+  }
+
+    .experience-img img {
+      width: 416px;
+      height: 416px;
+      object-fit: cover;
+    }
+
+     .div3 img, .div4 img {
+    height: 234px;
+    }
+
+    .div1 {
+      grid-column: 1;
+      grid-row: 1;
+   }
+  
+    .div2 {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
+    .div3 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  
+    .div4 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  
+  .div5 {
+      grid-column: 2;
+      grid-row: 3;
+    }
+  
+    .div6 {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .div7 {
+      grid-column: 3;
+      grid-row: 2;
+    }
 }
