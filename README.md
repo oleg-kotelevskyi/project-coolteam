@@ -1,0 +1,16 @@
+# CoffeeJoy - Team Project
+
+Це командний проект з верстки 
+
+### ☕️ Наша команда: Coolteam
+*   **Тімлід:** OLeG KoteLevskyi
+*   **Скраммастер:** Daryna Savarina
+*   **Розробники:** Daniel Serohin, Max Yurakh, Oksana Martyniuk, Valentyna, Діма Дичка, Пінчук Дмитро, Lada
+
+### 🛠 Технології:
+*   HTML5, CSS
+*   [Modern Normalize](https://cdnjs.com)
+*   Шрифти: Quicksand, Aboreto
+
+### 🔗 Корисні посилання: 
+*   [Live Page (GitHub Pages) 
