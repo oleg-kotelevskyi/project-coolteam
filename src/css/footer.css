@@ -85,7 +85,7 @@
 @media screen and (min-width: 768px) {
   .footer-container {
     min-width: 768px;
-    width: 100%;
+    width: 0;
     height: 257px;
     padding-left: 32px;
     padding-right: 32px;
