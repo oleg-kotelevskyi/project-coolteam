@@ -1,72 +1,191 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* =========================
+   WELCOME — Mobile first
+   320+ fluid, 375+ adaptive
+========================= */
 
-body {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  color: #0b0803;
+.welcome {
   background-color: #e0cbb4;
+  padding: 64px 0;
 }
 
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
+.welcome__container {
   max-width: 100%;
-  height: auto;
+  margin: 0 auto;
+  padding: 0 16px;
+  /* 320: гумово */
 }
 
-button {
-  cursor: pointer;
+.welcome__top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* замість купи margin */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Aboreto', system-ui;
-  margin: 0;
+.welcome__left,
+.welcome__right {
+  min-width: 0;
+  /* щоб не розпирало на мобілці */
 }
 
-.section-title {
+.welcome__label {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0803;
+  margin: 0 0 16px;
+}
+
+.welcome__title {
+  font-family: "Aboreto", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 32px;
+  /* 320: трохи менше, щоб не тісно */
   line-height: 1.2;
   letter-spacing: -0.01em;
-}
-
-.section {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
-p {
+  text-transform: uppercase;
+  color: #0b0803;
   margin: 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+.welcome__text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* 320 */
+  line-height: 1.5;
+  color: #0b0803;
+  margin: 0 0 32px;
+}
+
+.welcome__btn {
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border-radius: 100px;
+  background: #6f4e37;
+  box-shadow: 0 1px 2px rgba(11, 8, 3, 0.08);
+  text-decoration: none;
+
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.welcome__btn:hover,
+.welcome__btn:focus {
+  opacity: 0.5;
+}
+
+.welcome__btn:active {
+  opacity: 0.7;
+}
+
+.welcome__btn-svg {
+  fill: currentColor;
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Image — 16:9 як у макеті */
+.welcome__media {
+  margin-top: 32px;
+  width: 100%;
+  border-radius: 40px;
   overflow: hidden;
+
+  aspect-ratio: 16 / 9;
+}
+
+.welcome__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* =========================
+   375px+ (adaptive)
+========================= */
+@media screen and (min-width: 375px) {
+  .welcome {
+    padding: 56px 0;
+  }
+
+  .welcome__container {
+    padding: 0 20px;
+  }
+
+  .welcome__title {
+    font-size: 36px;
+  }
+
+  .welcome__text {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   768px+ (Tablet)
+========================= */
+@media screen and (min-width: 768px) {
+  .welcome {
+    padding: 64px 0;
+  }
+
+  .welcome__container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .welcome__top {
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .welcome__left,
+  .welcome__right {
+    flex: 1 1 0;
+  }
+
+  .welcome__btn {
+    width: 181px;
+  }
+
+  .welcome__media {
+    margin-top: 32px;
+  }
+}
+
+/* =========================
+   1440px+ (Desktop)
+========================= */
+@media screen and (min-width: 1440px) {
+  .welcome__container {
+    max-width: 1440px;
+    padding: 0 64px;
+  }
+
+  .welcome__top {
+    justify-content: space-between;
+  }
+
+  /* по твоєму скріну на десктопі більший відступ до картинки */
+  .welcome__media {
+    margin-top: 80px;
+  }
 }
